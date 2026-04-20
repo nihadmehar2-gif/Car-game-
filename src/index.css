@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --color-vibrant-blue: #0ea5e9;
+  --color-vibrant-pink: #ec4899;
+  --color-vibrant-yellow: #fbbf24;
+  --color-vibrant-green: #22c55e;
+}
+
+@utility neo-shadow {
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+@utility neo-shadow-lg {
+  box-shadow: 6px 6px 0px 0px #000000;
+}
+@utility neo-border {
+  border: 4px solid #000;
+}
+@utility neo-card {
+  background-color: white;
+  color: black;
+  @apply neo-border neo-shadow rounded-[20px] p-4;
+}
+@utility neo-btn {
+  @apply neo-border neo-shadow font-black uppercase tracking-wider transition-all active:translate-y-1 active:shadow-none;
+}
